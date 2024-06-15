@@ -1,3 +1,4 @@
+/* eslint-disable tailwindcss/no-custom-classname */
 'use client'
 import Link from 'next/link'
 import React from 'react'
@@ -6,7 +7,7 @@ export default function Header() {
   const [navbarOpen, setNavbarOpen] = React.useState(false)
 
   return (
-    <div className="clearNav fixed top-0 z-30 w-full transition duration-300 ease-in-out md:bg-opacity-90">
+    <div className="clearNav fixed top-0 z-30 w-full transition duration-300 ease-in-out dark:bg-gray-800/90 md:bg-white/90">
       <div className="mx-auto flex max-w-6xl flex-col px-4 md:flex-row md:items-center md:justify-between md:px-6 lg:px-8">
         <div className="flex flex-row items-center justify-between p-4">
           <Link
@@ -31,7 +32,6 @@ export default function Header() {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="feather feather-menu"
             >
               <line x1="3" y1="12" x2="21" y2="12"></line>
               <line x1="3" y1="6" x2="21" y2="6"></line>
@@ -53,14 +53,14 @@ export default function Header() {
               <li>
                 <Link
                   href="/dashboard"
-                  className="flex items-center px-5 py-3 font-medium text-gray-600 transition duration-150 ease-in-out hover:text-gray-900"
+                  className="flex items-center px-5 py-3 font-medium text-gray-600 backdrop-blur-md transition duration-150 ease-in-out hover:text-gray-900"
                 >
                   Dashboard
                 </Link>
               </li>
               <li>
                 <Link
-                  className="text-md mt-2 inline-flex items-center rounded-lg bg-gray-800 bg-transparent px-4 py-2 font-medium text-white transition duration-500 ease-in-out md:ml-4 md:mt-0"
+                  className="mt-2 inline-flex items-center rounded-lg bg-black px-4 py-2 text-base font-medium text-white transition duration-500 ease-in-out md:ml-4 md:mt-0"
                   href="/auth/login"
                 >
                   <span className="justify-center">Login</span>

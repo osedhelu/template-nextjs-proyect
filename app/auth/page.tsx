@@ -1,7 +1,7 @@
 import type { NextPage } from 'next'
 import { redirect } from 'next/navigation'
 
-const AuthRootPage: NextPage = ({}) => {
+const AuthRootPage: NextPage = () => {
   redirect('/auth/login')
 }
 

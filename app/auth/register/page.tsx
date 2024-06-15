@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation'
 
-const RegistesRedirect = ({}) => {
+const RegistesRedirect = () => {
   redirect('/auth/register/nuevo')
 }
 

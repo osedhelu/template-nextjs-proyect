@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const LoginScreen = ({}) => {
+const LoginScreen = () => {
   return (
     <>
       <div className="text-center">
@@ -19,7 +19,7 @@ const LoginScreen = ({}) => {
               name="email"
               id="email"
               placeholder="ejemplo@ejemplo.com"
-              className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-4 py-2 text-gray-700 placeholder:text-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder:text-gray-600 dark:focus:border-blue-400"
+              className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-4 py-2 text-gray-700 placeholder:text-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400/40  dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder:text-gray-600 dark:focus:border-blue-400"
             />
           </div>
 
@@ -28,9 +28,9 @@ const LoginScreen = ({}) => {
               <label htmlFor="password" className="text-sm text-gray-600 dark:text-gray-200">
                 Contraseña
               </label>
-              <a href="#" className="text-sm text-gray-400 hover:text-blue-500 hover:underline focus:text-blue-500">
+              <Link href="#" className="text-sm text-gray-400 hover:text-blue-500 hover:underline focus:text-blue-500">
                 ¿Olvidaste tu contraseña?
-              </a>
+              </Link>
             </div>
 
             <input
@@ -38,12 +38,12 @@ const LoginScreen = ({}) => {
               name="password"
               id="password"
               placeholder="Tu contraseña"
-              className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-4 py-2 text-gray-700 placeholder:text-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-40 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder:text-gray-600 dark:focus:border-blue-400"
+              className="mt-2 block w-full rounded-md border border-gray-200 bg-white px-4 py-2 text-gray-700 placeholder:text-gray-400 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-400/40  dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:placeholder:text-gray-600 dark:focus:border-blue-400"
             />
           </div>
 
           <div className="mt-6">
-            <button className="w-full rounded-md bg-blue-500 px-4 py-2 tracking-wide text-white transition-colors duration-200 hover:bg-blue-400 focus:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+            <button className="w-full rounded-md bg-blue-500 px-4 py-2 tracking-wide text-white transition-colors duration-200 hover:bg-blue-400 focus:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300/50">
               Iniciar sesión
             </button>
           </div>

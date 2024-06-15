@@ -1,6 +1,6 @@
 'use client'
-'use client'
 import { useStore } from '@nanostores/react'
+import type { FC } from 'react'
 import { useEffect } from 'react'
 import { HiCheck, HiExclamation, HiInformationCircle, HiX } from 'react-icons/hi'
 import { $storeToast, removeOldestToast, removeToastByIndex } from './storeToast'
@@ -20,7 +20,7 @@ const typeToast = (status: string) => {
   }
 }
 
-const IconToast = (status: string): any => {
+const IconToast = (status: string): FC<{ className: string }> => {
   switch (status) {
     case 'success':
       return HiCheck
@@ -31,7 +31,7 @@ const IconToast = (status: string): any => {
     case 'info':
       return HiInformationCircle
     default:
-      return null
+      return HiInformationCircle
   }
 }
 
